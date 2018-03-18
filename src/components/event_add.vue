@@ -1,7 +1,6 @@
 <template>
     <div class="event-add">
-        <input type="text" class="n-input" v-model="content" placeholder="待办事项" @keyup.enter="submit">
-        <button class="add-btn" @click="submit">提交</button>
+        <input type="text" class="n-input" v-model="content" placeholder="待办事项回车提交" @keyup.enter="submit">
     </div>
 </template>
 
@@ -36,15 +35,15 @@
 <style lang="scss" rel="stylesheet/scss">
     .event-add{
         position: relative;
-        padding:30px 90px 30px 0;
-        font-size: 16px;
+        padding:5px 0;
+        font-size: 12px;
         .n-input{
             width:100%;
             height:40px;
-            padding:7px 10px;
+            padding:7px 5px;
             line-height: 26px;
             border:1px solid #c0ccda;
-            border-radius:4px;
+            border-radius:2px;
             transition: border-color .2s cubic-bezier(.645,.045,.355,1);
             box-sizing: border-box;
             font-size:inherit;

@@ -7,7 +7,7 @@
             <ul>
                 <li class="event-list" v-for="value in getToDo">
                     <input type="checkbox" :key="value.id" @click="moveToDone(value.id)">
-                    <div>{{value.content}}</div>
+                    <div class="eventContent">{{value.content}}</div>
                     <button class="cancel-btn" @click="moveCancel(value.id)">取消</button>
                 </li>
             </ul>
@@ -20,7 +20,7 @@
             <ul>
                 <li class="event-list" v-for="value in getDone">
                     <input type="checkbox" :key="value.id" checked @click="moveToDo(value.id)">
-                    <div>{{value.content}}</div>
+                    <div class="eventContent">{{value.content}}</div>
                     <span class="event-time">{{value.time}}</span>
                 </li>
             </ul>
@@ -32,7 +32,7 @@
         <div class="event-box" :class="{'event-box-hide': false}">
             <ul>
                 <li class="event-list" v-for="value in getCancel">
-                    <div class="event-delete">{{value.content}}</div>
+                    <div class="eventContent event-delete">{{value.content}}</div>
                     <button class="cancel-btn" @click="moveToDo(value.id)">恢复</button>
                 </li>
             </ul>
@@ -116,8 +116,8 @@
     .event-content {
         .event-tab {
             position: relative;
-            height: 44px;
-            line-height: 44px;
+            height: 40px;
+            line-height: 40px;
             padding-left: 20px;
             border-bottom: 1px solid #fff;
             box-sizing: border-box;
@@ -153,10 +153,12 @@
                 position: relative;
                 min-height: 44px;
                 line-height: 25px;
-                padding: 10px 100px 10px 50px;
+                padding: 10px 65px 10px 40px;
+                overflow: hidden;
                 box-sizing: border-box;
                 border-bottom: 1px solid #eee;
                 color: #373e40;
+                .eventContent{ overflow: hidden;}
                 input[type=checkbox] {
                     position: absolute;
                     left: 15px;

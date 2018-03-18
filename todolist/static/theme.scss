@@ -18,8 +18,9 @@ $cyan_hover_color : #1facb4;
         background: $bg;
     }
     .event-tools{
-        background: $bg;
         .tools-btn{
+            border:1px solid $bg;
+            background: $bg;
             &:hover{
                 background: $bg_hover;
             }

@@ -65,7 +65,7 @@
         }
         .theme-title{
             margin:0 0 20px;
-            font-size: 20px;
+            font-size: 14px;
         }
         .theme-list{
             position: relative;

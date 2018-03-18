@@ -166,6 +166,8 @@
                     box-sizing: border-box;
                     text-overflow: ellipsis;
                     vertical-align: middle;
+                    word-wrap: break-word;
+                    word-break: break-all;
                     border:{
                         right:1px solid #eee;
                         bottom:1px solid #eee;

@@ -18,7 +18,6 @@
         
         <n-table @deldialog="delData" :is-show="table" @close="table = false"></n-table>
         <n-theme :is-show="theme" @close="theme = false"></n-theme>
-        <n-footer></n-footer>
     </div>
 </template>
 
@@ -110,7 +109,7 @@
         padding:0;
     }
     body{
-        font-size: 16px;
+        font-size: 12px;
         font-family: "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
     }
     input,button{

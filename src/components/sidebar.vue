@@ -2,19 +2,19 @@
     <div class="event-tools" :class="{'show-event-tools':isShow}">
         <ul class="tools-sidebar">
             <li>
-                <button class="tools-btn" @click="openTheme">切换主题</button>
+                <a class="tools-btn" @click="openTheme">切换主题</a>
             </li>
+            <!-- 
             <li>
                 <button class="tools-btn" @click="downloadData('notepad.txt',getDate)">下载数据</button>
-            </li>
-            <li>
+            </li><li>
                 <button class="tools-btn" @click="uploadData()">导入数据</button>
+            </li> -->
+            <li>
+                <a class="tools-btn" @click="openTable">编辑数据</a>
             </li>
             <li>
-                <button class="tools-btn" @click="openTable">编辑数据</button>
-            </li>
-            <li>
-                <button class="tools-btn" @click="showDialog">清空数据</button>
+                <a class="tools-btn" @click="showDialog">清空数据</a>
             </li>
         </ul>
     </div>
@@ -65,34 +65,36 @@
         left:0;
         bottom:0;
         width:250px;
-        padding:100px 20px 30px;
         box-sizing: border-box;
         transform: translateX(-250px);
         transition: transform .3s;
-        text-align: center;
+        text-align: left;
         background: rgba(0,0,0,.5);
-        font-size: 16px;
+        font-size: 12px;
         z-index:9;
+        padding-top: 40px;
         &.show-event-tools{
             transform: translateX(0);
         }
         .tools-sidebar{
             & > li{
-                line-height: 60px;
+                line-height: 40px;
             }
         }
         .tools-btn{
-            width:100px;
+            display:block;
             height:40px;
-            line-height: 26px;
+            line-height: 40px;
+            padding-left: 10px;
             color: #fff;
+            border-bottom: 1px solid #fff;
             transition: background .3s ease-in;
         }
         pre{
             white-space: pre-wrap;
             font:{
                 size: 14px;
-                family:  arial,"microsoft yahei";
+                family: "microsoft yahei";
             }
             line-height: 20px;
         }

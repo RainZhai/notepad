@@ -1,6 +1,6 @@
 <template>
     <header class="">
-        <h1>记事本 <a class="t-btn" @click="showTools"><span></span></a></h1>
+        <h1>工作事项 <a class="t-btn" @click="showTools"><span></span></a></h1>
     </header>
 </template>
 <script>
@@ -17,28 +17,29 @@
     header{
     	position:relative;
         width:100%;
-        height:70px;
+        height:45px;
         z-index:100;
         h1{
             position: relative;
             width:100%;
             max-width:800px;
             margin:0 auto;
-            line-height: 70px;
+            line-height: 45px;
             text-align: center;
             color: #fff;
+            font-size: 14px;
             a.t-btn{
                 position: absolute;
-                right:10px;
-                top:22px;
-                width:30px;
-                height:26px;
+                left:10px;
+                top:11px;
+                width:20px;
+                height:24px;
                 cursor: pointer;
             }
             span,span:before,span:after{
                 position: absolute;
                 left:0;
-                width:30px;
+                width:20px;
                 height:4px;
                 content: '';
                 background: #fff;
