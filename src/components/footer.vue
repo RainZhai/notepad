@@ -13,7 +13,7 @@
         line-height: 50px;
         background: #f8f8f8;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
         color: #666;
         border-top: 1px solid #ddd;
     }
